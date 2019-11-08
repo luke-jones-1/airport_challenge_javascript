@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # feature 'List Space' do
 #   scenario 'User can view List Space page' do
 #     visit('/')

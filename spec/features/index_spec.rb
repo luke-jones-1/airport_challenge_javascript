@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # feature 'Index' do
 #   scenario 'User can load the Index Page' do
 #     visit '/'
