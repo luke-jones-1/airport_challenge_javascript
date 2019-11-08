@@ -1,11 +1,10 @@
-// 'use strict';
-//
-// function ListSpace(name='', cost=0, address='', description=''){
-//   this._name = name;
-//   this._cost = cost;
-//   this._address = address;
-//   this._description = description;
-// };
+'use strict';
+
+function Plane(){};
+
+Plane.prototype.land = function(airport){
+  airport.clearForLanding(this);
+};
 //
 // ListSpace.prototype.all = function(){
 //   var pg = require(‘pg’);
