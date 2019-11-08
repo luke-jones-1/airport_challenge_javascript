@@ -9,16 +9,24 @@ Airport.prototype.planes = function(){
 };
 
 Airport.prototype.clearForLanding = function(plane){
-  this._hangar.push(plane);
+  if(this.isStormy()) {
+    throw new Error('cannot land during storm');
+  } else {
+    this._hangar.push(plane);
+  };
 };
 
 Airport.prototype.clearForTakeOff = function(plane){
-  this._hangar = [];
+  if(this.isStormy()) {
+    throw new Error('cannot takeoff during storm');
+  } else {
+    this._hangar = [];
+  };
 };
 
-// User.prototype. = function(){
-
-// }
+Airport.prototype.isStormy = function(){
+  return false;
+}
 //
 // User.prototype.dataRequest(){
 //
