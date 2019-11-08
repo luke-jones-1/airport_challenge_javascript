@@ -1,0 +1,35 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luke-jones-1/makersbnb-cgi-bristol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luke-jones-1/makersbnb-cgi-bristol/issues"
+  },
+  "homepage": "https://github.com/luke-jones-1/makersbnb-cgi-bristol#readme",
+  "devDependencies": {
+    "jasmine": "^3.5.0",
+    "jquery": "^3.4.1",
+    "karma": "*",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-cli": "*",
+    "karma-firefox-launcher": "*",
+    "karma-jasmine": "*",
+    "pg": "^7.12.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "pg": "^7.12.1"
+  }
+}
