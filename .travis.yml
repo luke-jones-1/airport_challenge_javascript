@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+    - "12.13.0"
+services:
+    - xvfb
+    - postgresql
+before_install:
+    - export DISPLAY=:99.0
+    - gem install bundler
+before_script:
+    - bundle install
+script:
+    - karma start karma.conf.js --single-run
+    - bundle exec rspec
