@@ -5,19 +5,20 @@ describe('Plane',function(){
   var airport;
   beforeEach(function(){
     plane = new Plane();
-    airport = jasmine.createSpyObj('airport',['clearForLanding']);
+    airport = jasmine.createSpyObj('airport',['clearForLanding', 'clearForTakeOff']);
   });
   it('can land at an airport', function() {
     expect(plane.land).not.toBeUndefined();
     plane.land(airport);
     expect(airport.clearForLanding).toHaveBeenCalledWith(plane);
   })
-//
-//   describe('name tests',function(){
-//     it('can view name',function(){
-//       expect(listspace._name).toEqual('name');
-//     });
-//   });
+
+  it('can take off from airport',function(){
+    plane.land(airport);
+    plane.takeoff();
+    expect(airport.clearForLanding).toHaveBeenCalledWith(plane);
+  });
+
 //
 //   describe('cost tests',function(){
 //     it('can view cost',function(){

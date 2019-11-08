@@ -9,11 +9,14 @@ Airport.prototype.planes = function(){
 };
 
 Airport.prototype.clearForLanding = function(plane){
-  this._hangar.push(plane)
+  this._hangar.push(plane);
 };
-//
-// User.prototype.signIn() {
-//
+
+Airport.prototype.clearForTakeOff = function(plane){
+  this._hangar = [];
+};
+// User.prototype. = function(){
+
 // }
 //
 // User.prototype.dataRequest(){
