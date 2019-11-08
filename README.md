@@ -32,6 +32,13 @@ I want to prevent landing when weather is stormy
 
 # Setup
 
-install node then follow the next steps
-```npm install```
-```bundle install```
+Install node then follow the next steps:
+
+Step 1:
+```
+npm install
+```
+Step 2:
+```
+bundle install
+```
