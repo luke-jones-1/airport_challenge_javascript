@@ -1,6 +1,6 @@
-#airport challenge javascript
+# Airport challenge javascript
 
-#completed user stories
+# Completed user stories
 
 ```
 As an air traffic controller
@@ -9,7 +9,7 @@ I want to instruct a plane to land at
   an airport and confirm that it has landed
 ```
 
-#uncompleted user stories
+# Uncompleted user stories
 
 ```
 As an air traffic controller
@@ -30,7 +30,7 @@ To ensure safety
 I want to prevent landing when weather is stormy
 ```
 
-#setup
+# Setup
 
 install node then follow the next steps
 ```npm install```
