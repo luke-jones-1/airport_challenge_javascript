@@ -6,6 +6,10 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
 group :test do
   gem 'capybara'
+  gem 'rspec'
+  gem 'rubocop'
+  gem 'simplecov', require: false
+  gem 'simplecov-console', require: false
 end
 
 # gem "rails"
@@ -14,4 +18,3 @@ gem 'pg'
 gem 'sinatra'
 gem 'sinatra-activerecord'
 gem 'sinatra-flash'
-gem 'rspec'
