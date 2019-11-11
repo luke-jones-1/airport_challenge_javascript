@@ -32,6 +32,12 @@ I want to prevent landing when weather is stormy
 
 # Uncompleted user stories
 
+```
+As an air traffic controller
+To make it easier to track multiple planes
+I would like a GUI or visual representation of the airport and planes
+```
+
 # Setup
 
 Install node then follow the next steps:
